@@ -1,40 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Dealer
 
-## Getting Started
+This project is a Next.js application designed to allow users to select a vehicle type and year to view available vehicle models.
 
-First, run the development server:
+## Menu
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup and Installation](#setup)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Select a vehicle type.
+- Choose a year.
+- View available vehicle models for the selected type and year.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Technologies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Next.js**: ^14.2.7
+- **TypeScript**: ^5
+- **React**: ^18
+- **Tailwind CSS**: ^3.4.1
+- **Lucide React**: ^0.438.0
+- **Shadcn/ui**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Setup and Installation
 
-## Learn More
+Follow the steps below to configure and install the project in your local environment:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository and access the directory**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone git@github.com:brunohnsouza/next-car-dealer.git
+   cd next-car-dealer
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Install dependencies**
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Start the development server**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm run dev
+   ```
+
+   Visit `http://localhost:3000` in your browser to see the application in action.
+
+## Available Scripts
+
+- `npm run dev` - Starts the development server with hot reloading.
+- `npm run build` - Builds the project for production.
+- `npm run start` - Starts the application in production mode.
+- `npm run lint` - Runs ESLint to check for code quality issues.
+
+## Configuration
+
+- **Environment Variables**: Configure environment variables in the `.env.local` file. Example:
+
+  ```env
+  NEXT_PUBLIC_API_URL=https://vpic.nhtsa.dot.gov/api
+  ```
+
+- **ESLint & Prettier**: Configuration files are provided to ensure code quality and consistency.
+
+## Contributing
+
+We welcome contributions to the project. To contribute:
+
+1. **Fork the Repository** - Create your own fork of the repository.
+2. **Create a Feature Branch** - Create a branch for your feature or bug fix (`git checkout -b feature/new-feature`).
+3. **Commit Your Changes** - Commit your changes with descriptive messages (`git commit -am 'Add new feature'`).
+4. **Push to Your Fork** - Push your changes to your fork (`git push origin feature/new-feature`).
+5. **Open a Pull Request** - Open a pull request to the main repository from your feature branch.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://choosealicense.com/licenses/mit/) file for details.
