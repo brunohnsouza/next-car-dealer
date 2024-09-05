@@ -2,6 +2,8 @@
 
 This project is a Next.js application designed to allow users to select a vehicle type and year to view available vehicle models.
 
+![a](./.github/preview-home.jpeg)
+
 ## Menu
 
 - [Features](#features)
